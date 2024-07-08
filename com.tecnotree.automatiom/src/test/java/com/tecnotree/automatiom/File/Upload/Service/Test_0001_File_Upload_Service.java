@@ -223,7 +223,7 @@ public class Test_0001_File_Upload_Service {
 		
 		Response response =Method.MultiPathData(Routers.base_url,Routers.dapFileUploadServiceUploadFiles,ServiceName.FileUploadSftp,"Documents/oracel901701790.txt");
 		Assert.assertEquals(response.statusCode(), 200);
-		//sleep
+		
 		Thread.sleep(1000);
 		
 		Assert.assertEquals(response.jsonPath().getString("successFilesList[0]").toString(), "oracel901701790.txt");
