@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="performanceCriteriaNewDMN" name="performanceCriteriaNewDMN" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="performanceCriteriaNewDMNId" name="performanceCriteriaNewDMNId">
+    <decisionTable id="DecisionTable_11azyal" hitPolicy="FIRST">
+      <input id="Input_1" label="subCategory">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>subCategory</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0syuqq1" label="targetCollection">
+        <inputExpression id="LiteralExpression_1a7oudb" typeRef="integer">
+          <text>targetCollection</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0uawsne" label="SUCCESS_RATE_OF_PTP">
+        <inputExpression id="LiteralExpression_1xto2ng" typeRef="integer">
+          <text>SUCCESS_RATE_OF_PTP</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="APPROVAL" name="APPROVAL" typeRef="string" />
+      <rule id="DecisionRule_0qtqn6r">
+        <inputEntry id="UnaryTests_1ku3nrx">
+          <text>"1","6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ave9hp">
+          <text>[75...90]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b2sp08">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yatm8w">
+          <text>"Almost Acheived"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00oavss">
+        <inputEntry id="UnaryTests_1monsoi">
+          <text>"1","6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m89kft">
+          <text>[90..95]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17l2150">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15qz622">
+          <text>"Acheived"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0r3biy9">
+        <inputEntry id="UnaryTests_12xq5lt">
+          <text>"1","6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_123d5i6">
+          <text>&gt;95</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1778jpm">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xjy0y1">
+          <text>"Outstanding"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18ylej7">
+        <inputEntry id="UnaryTests_1apmqup">
+          <text>"2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0idbhui">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tqy7t4">
+          <text>&lt;25</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jq3j7h">
+          <text>"Almost Acheived"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01yn3d9">
+        <inputEntry id="UnaryTests_0ogxzhy">
+          <text>"2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1r8krc2">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1njjvtt">
+          <text>[25...30]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0pgv41a">
+          <text>"Acheived"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yu1fbl">
+        <inputEntry id="UnaryTests_1cr9ubt">
+          <text>"2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1soqwm2">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05xjbbi">
+          <text>&gt;35</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17i1boz">
+          <text>"Outstanding"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="performanceCriteriaNewDMNId">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.tecnotree.automatiom.Listerns.Classessss&apos; to &apos;Listeners&apos;&#x0D;&#x0A;- Original project: &apos;com.tecnotree.automatiom&apos;&#x0D;&#x0A;- Original element: &apos;com.tecnotree.automatiom.Listerns.Classessss&apos;&#x0D;&#x0A;- Renamed element: &apos;com.tecnotree.automatiom.Listerns.Listeners&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Classessss&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.tecnotree.automatiom.Listerns{Classessss.java[Classessss" matchStrategy="1" name="Listeners" qualified="false" references="true" similarDeclarations="false" stamp="1715233752780" textual="false" version="1.0"/>
+</session>

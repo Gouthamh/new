@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.tecnotree.automatiom"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_011_SubFolderDoesntExists"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_010_BDC_PElab_3"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_0001_File_Upload_Service"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_012_FolderDoesntExists"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_006_port_22_1_wrongPath"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_005_port_22_17_wrongPath"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_001_BDC_PElab_3"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_008_port_22_172_SubFolder"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_009_port_22_1_SubFolder"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_004_BDC_PElab_WrongPath"/>
+        <listEntry value="com.tecnotree.automatiom.File.Upload.Service.Test_007_largeFiles"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

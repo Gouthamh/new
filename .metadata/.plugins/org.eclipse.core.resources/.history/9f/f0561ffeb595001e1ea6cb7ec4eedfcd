@@ -1,0 +1,27 @@
+package com.tecnotree.automatiom.testcases.bulksServices.Rest;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.tecnotree.automatiom.Methods.Method;
+import com.tecnotree.automatiom.routers.Routers;
+import com.tecnotree.automatiom.testcases.Notification;
+import com.tecnotree.automatiom.utilities.Fileupload;
+
+import io.restassured.response.Response;
+
+public class Rest extends Notification {
+	@Test
+	
+	public void Processedfolder() throws IOException {
+		Fileupload files = new Fileupload();
+		
+		Response response=Method.Put(files.readFileContent("BulkConfigu.json"), Routers.base_url,Routers.dapBulkProcess,"/configure/UpdateBulkMasterConfig");
+		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.jsonPath().getString("msg").toString(), "Bulk master configuration successfuly updated into DB");
+		
+	}
+
+}

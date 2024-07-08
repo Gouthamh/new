@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_0vb45yp" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Zeebe Modeler" exporterVersion="0.6.2">
+  <bpmn:process id="Arup_GateWayExpression" name="Arup_GateWayExpression" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_1enamo3</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_0fag90g" name="sample1">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="JS-script-worker" />
+        <zeebe:taskHeaders>
+          <zeebe:header key="scriptName" value="sample1.js" />
+          <zeebe:header key="functionName" value="sample1" />
+          <zeebe:header key="responseVariableName" value="sampleRes1" />
+        </zeebe:taskHeaders>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_143sg6j</bpmn:incoming>
+      <bpmn:outgoing>Flow_1jjxraz</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1enamo3" sourceRef="StartEvent_1" targetRef="Gateway_0hmeg1z" />
+    <bpmn:endEvent id="Event_19dmy7p">
+      <bpmn:incoming>Flow_0fiiho9</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_0z0q193" name="ResponseMap">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="responseMap" />
+        <zeebe:taskHeaders>
+          <zeebe:header key="restOutPutMapping" value="{&#34;sampleRes1&#34;:&#34;{:sampleRes1}&#34;,&#34;sampleRes2&#34;:&#34;{:sampleRes2}&#34;,&#34;sampleRes3&#34;:&#34;{:sampleRes3}&#34;}" />
+          <zeebe:header key="status" value="0" />
+        </zeebe:taskHeaders>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1jjxraz</bpmn:incoming>
+      <bpmn:incoming>Flow_0paufiz</bpmn:incoming>
+      <bpmn:incoming>Flow_17n8kuh</bpmn:incoming>
+      <bpmn:incoming>Flow_03wxfsl</bpmn:incoming>
+      <bpmn:outgoing>Flow_0fiiho9</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1jjxraz" sourceRef="Activity_0fag90g" targetRef="Activity_0z0q193" />
+    <bpmn:sequenceFlow id="Flow_0fiiho9" sourceRef="Activity_0z0q193" targetRef="Event_19dmy7p" />
+    <bpmn:exclusiveGateway id="Gateway_0hmeg1z" default="Flow_17n8kuh">
+      <bpmn:incoming>Flow_1enamo3</bpmn:incoming>
+      <bpmn:outgoing>Flow_143sg6j</bpmn:outgoing>
+      <bpmn:outgoing>Flow_13nx5zo</bpmn:outgoing>
+      <bpmn:outgoing>Flow_17n8kuh</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0mq0goc</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_143sg6j" sourceRef="Gateway_0hmeg1z" targetRef="Activity_0fag90g">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">requestMap.orderCount in (3..7)==false</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_13nx5zo" sourceRef="Gateway_0hmeg1z" targetRef="Activity_04wg53f">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">requestMap.orderCount in (3..7)==true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_17n8kuh" sourceRef="Gateway_0hmeg1z" targetRef="Activity_0z0q193" />
+    <bpmn:serviceTask id="Activity_04wg53f" name="sample2">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="JS-script-worker" />
+        <zeebe:taskHeaders>
+          <zeebe:header key="scriptName" value="sample2.js" />
+          <zeebe:header key="functionName" value="sample2" />
+          <zeebe:header key="responseVariableName" value="sampleRes2" />
+        </zeebe:taskHeaders>
+        <zeebe:ioMapping>
+          <zeebe:output source="sourceValue" target="sampleRes3" />
+        </zeebe:ioMapping>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_13nx5zo</bpmn:incoming>
+      <bpmn:outgoing>Flow_0paufiz</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0paufiz" sourceRef="Activity_04wg53f" targetRef="Activity_0z0q193" />
+    <bpmn:serviceTask id="Activity_1hwqwkb" name="sample3">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="JS-script-worker" retries="1" />
+        <zeebe:taskHeaders>
+          <zeebe:header key="scriptName" value="sample3.js" />
+          <zeebe:header key="functionName" value="sample3" />
+          <zeebe:header key="responseVariableName" value="sampleRes3" />
+        </zeebe:taskHeaders>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0mq0goc</bpmn:incoming>
+      <bpmn:outgoing>Flow_03wxfsl</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0mq0goc" sourceRef="Gateway_0hmeg1z" targetRef="Activity_1hwqwkb">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=requestMap.orderId &gt; requestMap.orderCount</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_03wxfsl" sourceRef="Activity_1hwqwkb" targetRef="Activity_0z0q193" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Arup_GateWayExpression">
+      <bpmndi:BPMNEdge id="Flow_0paufiz_di" bpmnElement="Flow_0paufiz">
+        <di:waypoint x="540" y="270" />
+        <di:waypoint x="670" y="270" />
+        <di:waypoint x="670" y="217" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17n8kuh_di" bpmnElement="Flow_17n8kuh">
+        <di:waypoint x="335" y="177" />
+        <di:waypoint x="620" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13nx5zo_di" bpmnElement="Flow_13nx5zo">
+        <di:waypoint x="310" y="202" />
+        <di:waypoint x="310" y="270" />
+        <di:waypoint x="440" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_143sg6j_di" bpmnElement="Flow_143sg6j">
+        <di:waypoint x="310" y="152" />
+        <di:waypoint x="310" y="90" />
+        <di:waypoint x="440" y="90" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0fiiho9_di" bpmnElement="Flow_0fiiho9">
+        <di:waypoint x="720" y="177" />
+        <di:waypoint x="751" y="177" />
+        <di:waypoint x="751" y="180" />
+        <di:waypoint x="782" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jjxraz_di" bpmnElement="Flow_1jjxraz">
+        <di:waypoint x="540" y="90" />
+        <di:waypoint x="670" y="90" />
+        <di:waypoint x="670" y="137" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1enamo3_di" bpmnElement="Flow_1enamo3">
+        <di:waypoint x="215" y="177" />
+        <di:waypoint x="285" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mq0goc_di" bpmnElement="Flow_0mq0goc">
+        <di:waypoint x="310" y="202" />
+        <di:waypoint x="310" y="370" />
+        <di:waypoint x="440" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_03wxfsl_di" bpmnElement="Flow_03wxfsl">
+        <di:waypoint x="540" y="370" />
+        <di:waypoint x="670" y="370" />
+        <di:waypoint x="670" y="217" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="159" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_19dmy7p_di" bpmnElement="Event_19dmy7p">
+        <dc:Bounds x="782" y="162" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0z0q193_di" bpmnElement="Activity_0z0q193">
+        <dc:Bounds x="620" y="137" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0hmeg1z_di" bpmnElement="Gateway_0hmeg1z" isMarkerVisible="true">
+        <dc:Bounds x="285" y="152" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04wg53f_di" bpmnElement="Activity_04wg53f">
+        <dc:Bounds x="440" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0fag90g_di" bpmnElement="Activity_0fag90g">
+        <dc:Bounds x="440" y="50" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1hwqwkb_di" bpmnElement="Activity_1hwqwkb">
+        <dc:Bounds x="440" y="330" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+    <line>
+      <![CDATA[ALL]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-07-05T14:10:27 IST" name="Default suite" finished-at="2024-07-05T14:17:35 IST" duration-ms="428118">
+    <groups>
+      <group name="ZIP">
+        <method signature="Test_003_port_22_10.ZIP()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="ZIP" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- ZIP -->
+      <group name="JPG">
+        <method signature="Test_003_port_22_10.JPG()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="JPG" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- JPG -->
+      <group name="TAR">
+        <method signature="Test_003_port_22_10.tar()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="tar" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- TAR -->
+      <group name="DMN">
+        <method signature="Test_003_port_22_10.DMN()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="DMN" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- DMN -->
+      <group name="XLX">
+        <method signature="Test_003_port_22_10.XLX()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="XLX" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- XLX -->
+      <group name="CSV">
+        <method signature="Test_003_port_22_10.CSV()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="CSV" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- CSV -->
+      <group name="PNG">
+        <method signature="Test_003_port_22_10.PNG()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="PNG" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- PNG -->
+      <group name="JSON">
+        <method signature="Test_003_port_22_10.JSON()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="JSON" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- JSON -->
+      <group name="JPEG">
+        <method signature="Test_003_port_22_10.JPEG()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="JPEG" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- JPEG -->
+      <group name="HTML">
+        <method signature="Test_003_port_22_10.HTML()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="HTML" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- HTML -->
+      <group name="SQL">
+        <method signature="Test_003_port_22_10.SQl()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="SQl" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- SQL -->
+      <group name="BPMN">
+        <method signature="Test_003_port_22_10.BPMN()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="BPMN" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- BPMN -->
+      <group name="TXT">
+        <method signature="Test_003_port_22_10.TXT()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="TXT" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- TXT -->
+      <group name="SevenZFile">
+        <method signature="Test_003_port_22_10.SevenZFile()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="SevenZFile" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- SevenZFile -->
+      <group name="YMAL">
+        <method signature="Test_003_port_22_10.YMAL()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" name="YMAL" class="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+      </group> <!-- YMAL -->
+    </groups>
+    <test started-at="2024-07-05T14:10:27 IST" name="Default test" finished-at="2024-07-05T14:17:35 IST" duration-ms="428118">
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10">
+        <test-method is-config="true" signature="masterDataUpdate()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:10:27 IST" name="masterDataUpdate" finished-at="2024-07-05T14:10:31 IST" duration-ms="3485" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- masterDataUpdate -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:10:31 IST" name="sftpremove" finished-at="2024-07-05T14:10:35 IST" duration-ms="4427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="BPMN()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:10:35 IST" name="BPMN" finished-at="2024-07-05T14:10:57 IST" duration-ms="21986" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BPMN -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:10:57 IST" name="sftpremove" finished-at="2024-07-05T14:11:01 IST" duration-ms="4068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="CSV()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:11:01 IST" name="CSV" finished-at="2024-07-05T14:11:22 IST" duration-ms="21309" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CSV -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:11:22 IST" name="sftpremove" finished-at="2024-07-05T14:11:27 IST" duration-ms="4438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="DMN()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:11:27 IST" name="DMN" finished-at="2024-07-05T14:11:48 IST" duration-ms="21341" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DMN -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:11:48 IST" name="sftpremove" finished-at="2024-07-05T14:11:53 IST" duration-ms="4438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="HTML()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:11:53 IST" name="HTML" finished-at="2024-07-05T14:12:17 IST" duration-ms="24046" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- HTML -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:12:17 IST" name="sftpremove" finished-at="2024-07-05T14:12:25 IST" duration-ms="8336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="JPEG()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:12:25 IST" name="JPEG" finished-at="2024-07-05T14:12:52 IST" duration-ms="26584" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JPEG -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:12:52 IST" name="sftpremove" finished-at="2024-07-05T14:12:56 IST" duration-ms="4405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="JPG()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:12:56 IST" name="JPG" finished-at="2024-07-05T14:13:20 IST" duration-ms="24062" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JPG -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:13:20 IST" name="sftpremove" finished-at="2024-07-05T14:13:24 IST" duration-ms="3990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="JSON()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:13:24 IST" name="JSON" finished-at="2024-07-05T14:13:48 IST" duration-ms="23423" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- JSON -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:13:48 IST" name="sftpremove" finished-at="2024-07-05T14:13:52 IST" duration-ms="4142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="PNG()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:13:52 IST" name="PNG" finished-at="2024-07-05T14:14:13 IST" duration-ms="21807" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PNG -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:14:13 IST" name="sftpremove" finished-at="2024-07-05T14:14:18 IST" duration-ms="4204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="SQl()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:14:18 IST" name="SQl" finished-at="2024-07-05T14:14:41 IST" duration-ms="23654" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SQl -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:14:41 IST" name="sftpremove" finished-at="2024-07-05T14:14:46 IST" duration-ms="4358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="SevenZFile()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:14:46 IST" name="SevenZFile" finished-at="2024-07-05T14:15:07 IST" duration-ms="21692" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SevenZFile -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:15:07 IST" name="sftpremove" finished-at="2024-07-05T14:15:11 IST" duration-ms="4017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="TXT()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:15:11 IST" name="TXT" finished-at="2024-07-05T14:15:33 IST" duration-ms="21812" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TXT -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:15:33 IST" name="sftpremove" finished-at="2024-07-05T14:15:37 IST" duration-ms="3979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="XLX()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:15:37 IST" name="XLX" finished-at="2024-07-05T14:15:58 IST" duration-ms="20975" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- XLX -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:15:58 IST" name="sftpremove" finished-at="2024-07-05T14:16:02 IST" duration-ms="4098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="YMAL()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:16:02 IST" name="YMAL" finished-at="2024-07-05T14:16:23 IST" duration-ms="21135" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- YMAL -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:16:23 IST" name="sftpremove" finished-at="2024-07-05T14:16:28 IST" duration-ms="4122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="ZIP()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:16:28 IST" name="ZIP" finished-at="2024-07-05T14:16:51 IST" duration-ms="23518" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ZIP -->
+        <test-method is-config="true" signature="sftpremove()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:16:51 IST" name="sftpremove" finished-at="2024-07-05T14:16:55 IST" duration-ms="4115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sftpremove -->
+        <test-method signature="tar()[pri:0, instance:com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10@74fe5c40]" started-at="2024-07-05T14:16:55 IST" name="tar" finished-at="2024-07-05T14:17:35 IST" duration-ms="40075" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ALL]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tar -->
+      </class> <!-- com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test name="Test1_Test2_Test3">
+    <classes>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10"/>
+
+    </classes>
+  </test> 
+  <test name="Test4_Test5_Test6">
+    <classes>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_006_port_22_1_wrongPath"/>
+    </classes>
+  </test>
+<!--   <test name="Test8_Test9_Test10" parallel="classes" thread-count="3">
+    <classes>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_008_port_22_172_SubFolder"/>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_009_port_22_1_SubFolder"/>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_010_BDC_PElab_3_SubFolder"/>
+    </classes>
+  </test>
+  <test name="Test7_Test11_Test12">
+    <classes>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_007_largeFiles"/>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_011_SubFolderDoesntExists"/>
+      <class name="com.tecnotree.automatiom.File.Upload.Service.Test_012_FolderDoesntExists"/>
+    </classes>
+  </test>-->
+  
+  <!-- Test -->
+</suite> <!-- Suite -->

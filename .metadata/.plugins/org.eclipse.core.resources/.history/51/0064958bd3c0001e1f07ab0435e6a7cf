@@ -1,0 +1,69 @@
+package com.tecnotree.automatiom.testcases.bulkemailattachement;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.bson.Document;
+import org.testng.Assert;
+
+import com.mongodb.client.MongoCollection;
+import com.tecnotree.automatiom.Methods.Method;
+import com.tecnotree.automatiom.routers.Routers;
+import com.tecnotree.automatiom.utilities.MongoConnections;
+import com.tecnotree.automatiom.utilities.MysqlDB;
+import com.tecnotree.automatiom.utilities.SFTP;
+
+import io.restassured.response.Response;
+
+public class mysql {
+	
+	public void test0001() throws InterruptedException, ClassNotFoundException, SQLException {
+		
+		Map<String, Integer> intaldbcount = new HashMap<String, Integer>();
+		
+		
+//		MongoCollection<Document> NOTIFICATION_EMAIL_HISTORY = MongoConnections.connect(Routers.mongoURL, Routers.databasename, "NOTIFICATION_EMAIL_HISTORY");
+//		MongoConnections.deleteManyDocument(NOTIFICATION_EMAIL_HISTORY, "NOTIFICATION_ID", 37346);
+//		intaldbcount.put("MongoIcount", MongoConnections.countDocuments(NOTIFICATION_EMAIL_HISTORY));
+//		
+//		Connection connection = MysqlDB.getConnection(Routers.jdbcUrl, Routers.username, Routers.password);
+//		int tablecount = MysqlDB.getCountFromTable(connection,"smdb.BulkNotificationServices");
+//		
+//		SFTP.sftpremove(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31704, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, "/bulk-store/");
+//		SFTP.sftpremove(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31704, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, "/bulk-store/ErrorFiles/");
+//		SFTP.sftpremove(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31704, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, "/bulk-store/SuccessFileTransfer/");
+//		
+//		intaldbcount.put("bulkstore", SFTP.SFTPCount(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31704, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, "/bulk-store/"));
+//		
+//		intaldbcount.put("successfull",SFTP.SFTPCount(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31704, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, "/bulk-store/ErrorFiles/"));
+//		
+//		intaldbcount.put("errorfile", SFTP.SFTPCount(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31704, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, "/bulk-store/SuccessFileTransfer/"));
+//		
+		String updateendpoint = Routers.configure + Routers.UpdateBulkMasterConfig;
+		System.out.println(updateendpoint);
+		
+				
+		Response response = Method.Put("/BulksConfigurations/EmailArchements/Mysql/test001.json", Routers.base_url, Routers.dapBulkProcess, updateendpoint);
+		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.jsonPath().getString("msg").toString(),"Bulk master configuration successfuly updated into DB");
+		
+//		Response PutResponse=Method.Post("/BulkRequestPayload/Offset0.json",Routers.base_url, Routers.dapBulkProcess, Routers.notification_bulk_service);
+//		Assert.assertEquals(PutResponse.statusCode(), 200);
+//		intaldbcount.put("MongoFcount", MongoConnections.countDocuments(NOTIFICATION_EMAIL_HISTORY));
+//		
+//		MongoConnections.closeConnection();
+//		
+		
+
+		
+
+
+	}
+	public static void main(String[] args) throws ClassNotFoundException, InterruptedException, SQLException {
+		mysql n = new mysql();
+		n.test0001();
+	}
+
+}

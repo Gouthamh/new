@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="localHost22"/>
+		<list key="findhistory">
+			<item value="FileUploadSftp"/>
+			<item value="SFTP_Info.sftppath_10_4_3_95"/>
+			<item value="SFTP_Info.sshKey_10_4_3_95"/>
+			<item value="SFTP_Info.sftpPassword10_4_3_95_22"/>
+			<item value="SFTP_Info.sftpUserName_10_4_3_95_22"/>
+			<item value="SFTP_Info.sftpPort_22"/>
+			<item value="SFTP_Info.sftpHost_10_4_3_95"/>
+			<item value="sftpHost"/>
+			<item value="differentMethods1"/>
+			<item value="differentMethods"/>
+			<item value="."/>
+			<item value="BulkNotificationServices"/>
+			<item value="getCountFromTable"/>
+			<item value="statement"/>
+			<item value="setdown_ended"/>
+		</list>
+		<list key="replacehistory">
+			<item value="localHost22"/>
+			<item value="localHost_22"/>
+			<item value="sftppath"/>
+			<item value="sshKey"/>
+			<item value="sftpPassword"/>
+			<item value="\"/>
+			<item value="sftpUserName"/>
+			<item value="sftpPort"/>
+			<item value="sftpHost"/>
+			<item value="differentMethods2"/>
+			<item value="differentMethods1"/>
+			<item value="_"/>
+			<item value="password"/>
+			<item value="username"/>
+			<item value="port"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="88"/>
+		<item key="DIALOG_Y_ORIGIN" value="356"/>
+		<item key="DIALOG_WIDTH" value="511"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

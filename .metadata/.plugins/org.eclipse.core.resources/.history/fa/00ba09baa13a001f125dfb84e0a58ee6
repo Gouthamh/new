@@ -1,0 +1,16 @@
+package com.tecnotree.automatiom.ReUsedMethods;
+
+import org.bson.Document;
+
+import com.mongodb.client.MongoCollection;
+import com.tecnotree.automatiom.routers.Routers;
+import com.tecnotree.automatiom.utilities.MongoConnections;
+
+public class MasterConfiguration {
+	
+	MongoCollection<Document> NOTIFICATION_EMAIL_HISTORY = MongoConnections.connect(Routers.mongoURL,Routers.databasename, "DAP_FILE_UPLOAD_CONFIG");
+	MongoConnections.documentExists(NOTIFICATION_EMAIL_HISTORY,"serviceName","localHost22")
+		
+	
+
+}

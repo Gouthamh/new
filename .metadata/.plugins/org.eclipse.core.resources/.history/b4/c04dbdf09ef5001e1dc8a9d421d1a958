@@ -1,0 +1,18 @@
+package com.tecnotree.automatiom.utilities;
+
+import java.io.File;
+
+public class DocumentToBase64 {
+	
+	public static void converterToBase64() {
+		File file = new File("/BulksConfigurations/EmailArchements/Mysql/test001.json");
+		System.out.println(file.exists());
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		converterToBase64();
+	}
+
+}

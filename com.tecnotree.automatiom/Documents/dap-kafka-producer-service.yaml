@@ -1,0 +1,380 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "13"
+    field.cattle.io/publicEndpoints: '[{"addresses":["172.20.21.57"],"port":443,"protocol":"HTTPS","serviceName":"dap-ns:dap-kafka-producer-service","ingressName":"dap-ns:dap-kafka-producer-service","hostname":"dap.pe-lab3.bdc-rancher.tecnotree.com","path":"/kps/kafka-producer-service","allNodes":true}]'
+    meta.helm.sh/release-name: dap-kafka-producer-service
+    meta.helm.sh/release-namespace: dap-ns
+  creationTimestamp: "2022-09-29T04:18:24Z"
+  generation: 54
+  labels:
+    app.kubernetes.io/instance: dap-kafka-producer-service
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: dap-kafka-producer-service
+    app.kubernetes.io/version: 5.3.1
+    helm.sh/chart: dap-kafka-producer-service-5.3.1
+    helm.toolkit.fluxcd.io/name: dap-kafka-producer-service
+    helm.toolkit.fluxcd.io/namespace: dap-ns
+  managedFields:
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:meta.helm.sh/release-name: {}
+          f:meta.helm.sh/release-namespace: {}
+        f:labels:
+          .: {}
+          f:app.kubernetes.io/instance: {}
+          f:app.kubernetes.io/managed-by: {}
+          f:app.kubernetes.io/name: {}
+          f:app.kubernetes.io/version: {}
+          f:helm.sh/chart: {}
+          f:helm.toolkit.fluxcd.io/name: {}
+          f:helm.toolkit.fluxcd.io/namespace: {}
+      f:spec:
+        f:progressDeadlineSeconds: {}
+        f:revisionHistoryLimit: {}
+        f:selector: {}
+        f:strategy:
+          f:rollingUpdate:
+            .: {}
+            f:maxSurge: {}
+            f:maxUnavailable: {}
+          f:type: {}
+        f:template:
+          f:metadata:
+            f:labels:
+              .: {}
+              f:app.kubernetes.io/instance: {}
+              f:app.kubernetes.io/name: {}
+          f:spec:
+            f:containers:
+              k:{"name":"dap-kafka-producer-service"}:
+                .: {}
+                f:env:
+                  .: {}
+                  k:{"name":"BOOTSTRAP_SERVER"}:
+                    .: {}
+                    f:name: {}
+                  k:{"name":"GROUP_ID"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"JAVA_OPTS"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"LOG_LEVEL"}:
+                    .: {}
+                    f:name: {}
+                  k:{"name":"LOGS_VALIDITY"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"RESPONSE_WAIT_TIME"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"SERVICE_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"TOPIC_NAME"}:
+                    .: {}
+                    f:name: {}
+                  k:{"name":"ZB_JOB_INT_TIME"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"ZB_MAX_JOBS_ACTIVE"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"ZB_THREAD_POOL_SIZE"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"ZEEBE_HOST"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"ZEEBE_PORT"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                f:image: {}
+                f:imagePullPolicy: {}
+                f:livenessProbe:
+                  .: {}
+                  f:failureThreshold: {}
+                  f:httpGet:
+                    .: {}
+                    f:path: {}
+                    f:port: {}
+                    f:scheme: {}
+                  f:initialDelaySeconds: {}
+                  f:periodSeconds: {}
+                  f:successThreshold: {}
+                  f:timeoutSeconds: {}
+                f:name: {}
+                f:ports:
+                  .: {}
+                  k:{"containerPort":8080,"protocol":"TCP"}:
+                    .: {}
+                    f:containerPort: {}
+                    f:name: {}
+                    f:protocol: {}
+                f:readinessProbe:
+                  .: {}
+                  f:failureThreshold: {}
+                  f:httpGet:
+                    .: {}
+                    f:path: {}
+                    f:port: {}
+                    f:scheme: {}
+                  f:initialDelaySeconds: {}
+                  f:periodSeconds: {}
+                  f:successThreshold: {}
+                  f:timeoutSeconds: {}
+                f:resources:
+                  .: {}
+                  f:limits:
+                    .: {}
+                    f:cpu: {}
+                    f:memory: {}
+                  f:requests:
+                    .: {}
+                    f:cpu: {}
+                    f:memory: {}
+                f:terminationMessagePath: {}
+                f:terminationMessagePolicy: {}
+            f:dnsPolicy: {}
+            f:restartPolicy: {}
+            f:schedulerName: {}
+            f:securityContext:
+              .: {}
+              f:fsGroup: {}
+              f:runAsGroup: {}
+              f:runAsNonRoot: {}
+              f:runAsUser: {}
+            f:serviceAccount: {}
+            f:serviceAccountName: {}
+            f:terminationGracePeriodSeconds: {}
+    manager: helm-controller
+    operation: Update
+    time: "2023-03-29T10:49:00Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:field.cattle.io/publicEndpoints: {}
+      f:spec:
+        f:replicas: {}
+        f:template:
+          f:metadata:
+            f:annotations:
+              .: {}
+              f:cattle.io/timestamp: {}
+              f:field.cattle.io/ports: {}
+          f:spec:
+            f:containers:
+              k:{"name":"dap-kafka-producer-service"}:
+                f:env:
+                  k:{"name":"BOOTSTRAP_SERVER"}:
+                    f:value: {}
+                  k:{"name":"LOG_LEVEL"}:
+                    f:value: {}
+                  k:{"name":"TOPIC_NAME"}:
+                    f:value: {}
+                  k:{"name":"ZEEBE_HOST"}:
+                    f:valueFrom:
+                      f:configMapKeyRef:
+                        f:optional: {}
+                  k:{"name":"ZEEBE_PORT"}:
+                    f:valueFrom:
+                      f:configMapKeyRef:
+                        f:optional: {}
+                f:securityContext:
+                  .: {}
+                  f:capabilities: {}
+    manager: rancher
+    operation: Update
+    time: "2023-05-23T05:45:07Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:deployment.kubernetes.io/revision: {}
+      f:status:
+        f:availableReplicas: {}
+        f:conditions:
+          .: {}
+          k:{"type":"Available"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Progressing"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:observedGeneration: {}
+        f:readyReplicas: {}
+        f:replicas: {}
+        f:updatedReplicas: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-05-25T06:42:45Z"
+  name: dap-kafka-producer-service
+  namespace: dap-ns
+  resourceVersion: "269395589"
+  uid: d3838b45-5466-417f-afc3-902207368a52
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: dap-kafka-producer-service
+      app.kubernetes.io/name: dap-kafka-producer-service
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        cattle.io/timestamp: "2023-05-25T06:41:10Z"
+        field.cattle.io/ports: '[[{"containerPort":8080,"dnsName":"dap-kafka-producer-service","hostPort":0,"kind":"ClusterIP","name":"http","protocol":"TCP","sourcePort":0}]]'
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: dap-kafka-producer-service
+        app.kubernetes.io/name: dap-kafka-producer-service
+    spec:
+      containers:
+      - env:
+        - name: BOOTSTRAP_SERVER
+          value: kafka-cp-kafka.infra-ns.svc.cluster.local:9092
+        - name: GROUP_ID
+          value: apoloNotifExt
+        - name: JAVA_OPTS
+          value: -Xmx1024m -Xms256m
+        - name: LOGS_VALIDITY
+          value: "5"
+        - name: LOG_LEVEL
+          value: debug
+        - name: RESPONSE_WAIT_TIME
+          value: "5000"
+        - name: SERVICE_NAME
+          value: kafka-producer-service
+        - name: TOPIC_NAME
+          value: notification
+        - name: ZB_JOB_INT_TIME
+          value: "5000"
+        - name: ZB_MAX_JOBS_ACTIVE
+          value: "32"
+        - name: ZB_THREAD_POOL_SIZE
+          value: "15"
+        - name: ZEEBE_HOST
+          valueFrom:
+            configMapKeyRef:
+              key: zeebe_host
+              name: dap-common-config
+              optional: false
+        - name: ZEEBE_PORT
+          valueFrom:
+            configMapKeyRef:
+              key: zeebe_port
+              name: dap-common-config
+              optional: false
+        image: registry.tecnotree.com/common-dap/dap-kafka-producer-service:5.3.1
+        imagePullPolicy: Always
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /kps/kafka-producer-service?queryParams=ping
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 90
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 5
+        name: dap-kafka-producer-service
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /kps/kafka-producer-service?queryParams=ping
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 90
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 5
+        resources:
+          limits:
+            cpu: "1"
+            memory: 1200Mi
+          requests:
+            cpu: 50m
+            memory: 1Gi
+        securityContext:
+          capabilities: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext:
+        fsGroup: 860
+        runAsGroup: 860
+        runAsNonRoot: true
+        runAsUser: 860
+      serviceAccount: default
+      serviceAccountName: default
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2023-05-15T05:25:18Z"
+    lastUpdateTime: "2023-05-15T05:25:18Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2023-03-29T11:04:52Z"
+    lastUpdateTime: "2023-05-25T06:42:45Z"
+    message: ReplicaSet "dap-kafka-producer-service-5d8cb8fd5f" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 54
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1

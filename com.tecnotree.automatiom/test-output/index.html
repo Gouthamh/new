@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\krgouth\AppData\Local\Temp\testng-eclipse-1576674147\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>15 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="BPMN">BPMN</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="CSV">CSV</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="DMN">DMN</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="HTML">HTML</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="JPEG">JPEG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="JPG">JPG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="JSON">JSON</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="PNG">PNG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="SQl">SQl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="SevenZFile">SevenZFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="TXT">TXT</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="XLX">XLX</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="YMAL">YMAL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="ZIP">ZIP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10" class="method navigator-link" hash-for-method="tar">tar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BPMN">
+                  </a> <!-- BPMN -->
+                  <span class="method-name">BPMN</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CSV">
+                  </a> <!-- CSV -->
+                  <span class="method-name">CSV</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DMN">
+                  </a> <!-- DMN -->
+                  <span class="method-name">DMN</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HTML">
+                  </a> <!-- HTML -->
+                  <span class="method-name">HTML</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="JPEG">
+                  </a> <!-- JPEG -->
+                  <span class="method-name">JPEG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="JPG">
+                  </a> <!-- JPG -->
+                  <span class="method-name">JPG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="JSON">
+                  </a> <!-- JSON -->
+                  <span class="method-name">JSON</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PNG">
+                  </a> <!-- PNG -->
+                  <span class="method-name">PNG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SQl">
+                  </a> <!-- SQl -->
+                  <span class="method-name">SQl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SevenZFile">
+                  </a> <!-- SevenZFile -->
+                  <span class="method-name">SevenZFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TXT">
+                  </a> <!-- TXT -->
+                  <span class="method-name">TXT</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="XLX">
+                  </a> <!-- XLX -->
+                  <span class="method-name">XLX</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="YMAL">
+                  </a> <!-- YMAL -->
+                  <span class="method-name">YMAL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ZIP">
+                  </a> <!-- ZIP -->
+                  <span class="method-name">ZIP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tar">
+                  </a> <!-- tar -->
+                  <span class="method-name">tar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\krgouth\AppData\Local\Temp\testng-eclipse-1576674147\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">BPMN</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">BPMN</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CSV</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CSV</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">DMN</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DMN</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">HTML</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">HTML</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">JPEG</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">JPEG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">JPG</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">JPG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">JSON</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">JSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">PNG</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">PNG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SQL</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SQl</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SevenZFile</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SevenZFile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">TAR</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">tar</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">TXT</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TXT</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">XLX</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">XLX</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">YMAL</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">YMAL</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ZIP</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ZIP</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tar')
+data.setCell(0, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(0, 3, 40075);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'JPEG')
+data.setCell(1, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(1, 3, 26584);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'JPG')
+data.setCell(2, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(2, 3, 24062);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'HTML')
+data.setCell(3, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(3, 3, 24046);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SQl')
+data.setCell(4, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(4, 3, 23654);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ZIP')
+data.setCell(5, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(5, 3, 23518);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'JSON')
+data.setCell(6, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(6, 3, 23423);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'BPMN')
+data.setCell(7, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(7, 3, 21986);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TXT')
+data.setCell(8, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(8, 3, 21812);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'PNG')
+data.setCell(9, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(9, 3, 21807);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SevenZFile')
+data.setCell(10, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(10, 3, 21692);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'DMN')
+data.setCell(11, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(11, 3, 21341);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'CSV')
+data.setCell(12, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(12, 3, 21309);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'YMAL')
+data.setCell(13, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(13, 3, 21135);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'XLX')
+data.setCell(14, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10')
+data.setCell(14, 3, 20975);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SQl</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">XLX</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PNG</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SevenZFile</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">JSON</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DMN</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">JPEG</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ZIP</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CSV</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TXT</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tar</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">YMAL</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BPMN</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HTML</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">JPG</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ALL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tecnotree.automatiom.File.Upload.Service.Test_003_port_22_10</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">masterDataUpdate</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">3498 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BPMN</span>
+                <span class="method-start">7926 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">29916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CSV</span>
+                <span class="method-start">33984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">55296 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DMN</span>
+                <span class="method-start">59734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">81076 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">HTML</span>
+                <span class="method-start">85514 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">109563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">JPEG</span>
+                <span class="method-start">117899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">144486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">JPG</span>
+                <span class="method-start">148891 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">172955 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">JSON</span>
+                <span class="method-start">176946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">200371 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PNG</span>
+                <span class="method-start">204513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">226322 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SQl</span>
+                <span class="method-start">230526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">254182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SevenZFile</span>
+                <span class="method-start">258541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">280236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TXT</span>
+                <span class="method-start">284253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">306067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">XLX</span>
+                <span class="method-start">310047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">331024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">YMAL</span>
+                <span class="method-start">335123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">356260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ZIP</span>
+                <span class="method-start">360382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sftpremove</span>
+                <span class="method-start">383901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tar</span>
+                <span class="method-start">388017 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

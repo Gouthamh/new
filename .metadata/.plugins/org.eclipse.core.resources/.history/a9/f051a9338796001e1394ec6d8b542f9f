@@ -1,0 +1,43 @@
+package test;
+
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+
+public class CsvDataProvider {
+
+    @Test(dataProvider = "csvData")
+    public void testMethod(String data1) {
+        System.out.println("Data from CSV: " + data1);
+        // Your test logic here
+    }
+
+    @DataProvider(name = "csvData")
+    public Object[][] readCsvData() throws IOException, CsvException {
+        String filePath = "ResquestPayloadInCsv/Notification_bulk1.xlsx";
+
+        try (CSVReader csvReader = new CSVReader(new FileReader(filePath))) {
+            List<String[]> lines = csvReader.readAll();
+
+            int rowCount = lines.size();
+            int colCount = lines.get(0).length;
+
+            Object[][] data = new Object[rowCount - 1][colCount]; // Subtract 1 for header row
+
+            for (int i = 1; i < rowCount; i++) {
+                String[] line = lines.get(i);
+                for (int j = 0; j < colCount; j++) {
+                    data[i - 1][j] = line[j];
+                }
+            }
+
+            return data;
+        }
+    }
+}

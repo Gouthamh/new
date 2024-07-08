@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;bulk-processing-parent&apos;" deleteContents="false" description="Delete resource &apos;bulk-processing-parent&apos;" element1="/bulk-processing-parent" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1704210909699"/>&#x0A;<refactoring comment="Delete resource &apos;BulkProcess&apos;" deleteContents="false" description="Delete resource &apos;BulkProcess&apos;" element1="/BulkProcess" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1704210923370"/>
+</session>

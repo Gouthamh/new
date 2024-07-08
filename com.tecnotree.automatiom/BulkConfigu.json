@@ -1,0 +1,42 @@
+{
+    "ServiceName": "formdata",
+    "BulkID": 467,
+    "BulkType": "DB-MYSQL",
+    "Action": {
+        "EndPoint": "http://dap.pe-lab3.bdc-rancher.tecnotree.com/notification/triggerNotificationForEmailAttachment",
+        "Headers": {
+            "Content-Type": [
+                "multipart/form-data"
+            ]
+        },
+        "IsAuthenticationRequired": false,
+        "Method": "POST",
+        "PlaceholderType": 0,
+        "Protocol": "FORM-DATA",
+        "RequestFormat": {
+            "emailUserInput": {
+                "notificationId": "2094",
+                "msisdn": 3,
+                "emailTo": 2,
+                "inputValue": {
+                    "DataPlan": 4,
+                    "Name": 1,
+                    "amount": 0
+                },
+                "shortCode": "8001",
+                "systemId": "smppserver"
+            },
+            "fileData": 5,
+            "filename": 6
+        },
+        "username": ""
+    },
+    "MySqlParameters": {
+        "FetchSize": 1,
+        "NodeId": "4909",
+        "OffsetEnable": true,
+        "SqlQuery": "SELECT ID,NAME,EMAIL,MSISDN,DATAPlan,to_base64(FileData),Filename FROM smdb.UploadTest",
+        "StopLimit": 2
+    },
+    "_class": "com.tecnotree.dap.bulk.document.BulkMasterConfigurationDocument"
+}
