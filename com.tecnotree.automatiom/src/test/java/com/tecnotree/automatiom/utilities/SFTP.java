@@ -506,16 +506,16 @@ public class SFTP {
 
 	public static void main(String[] args) {
 
-		String sftpHost = "172.20.21.227";
-		int sftpPort = 22;
-		String sftpUserName = "tecnotree";
-		String sftpPassword = "tecnotree@123";
-		//String sshKey = "172.20.21.57 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCfeK+wXukXepUaNZmSTGEjDeUTmJdJlMepkUZA6m5p6tzJa77dIAEx1DOdS+uYCOQWJeguACk204p8Qg83w2Is/YtfzoprK9suIBuZLgDoFT+rSXWptVR3weHQqmwh9aN3AwcRN2ql+czgT3SjIMOahz9peLeRKe+20TiOLv8+c0h8+IQxkqX7qrY0sYrrZyJsQ9HQVrLGEb9RLmOgyKPnqCDIRFH72+nYSpcN+k7Yxc8GiL+qUtKs/GZwBYW2oQMVJR/7XeFVfMYgKBbh/R4L9hYztJX5jCn6iovAwhMB9bd0KqDHhJsiU39R8JoUeGXkW83j3/dZdO1QvTY+AQHmZRW7mZ5MInWeT6BwAJqYICfibSfD/0FYXG7fonPAlzAl6lDiMyBpmZnZOMn0vF8JgHPu1AUxgPrcbNbLhwl19qfz2GnIHoDfg2h8IPXhASh56oIGFSbREIeTYjx0JkJgkZsbGKMYKnEjbSApMUNfhUu16/khm+/tptDqmMDnYmU2E4SQ+Jici9FD1bGO2pDUS2Z6NQz5HyzQyhHPnSH/eQnowRc+YnXa15npey/EEsKE/NGEtS/xk1DXsqEk30wMZYEfwEga5YDCCwIEgzYpHIgF2MmCGYnb/AgtjPRQEYvAWz42S2yD1FNnmsxGxTvOfg60+PuzJW5l2l6zrzvPxw==";
+		String sftpHost = "172.20.21.57";
+		int sftpPort = 31701;
+		String sftpUserName = "admin";
+		String sftpPassword = "admin";
+		String sshKey = "172.20.21.57 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCfeK+wXukXepUaNZmSTGEjDeUTmJdJlMepkUZA6m5p6tzJa77dIAEx1DOdS+uYCOQWJeguACk204p8Qg83w2Is/YtfzoprK9suIBuZLgDoFT+rSXWptVR3weHQqmwh9aN3AwcRN2ql+czgT3SjIMOahz9peLeRKe+20TiOLv8+c0h8+IQxkqX7qrY0sYrrZyJsQ9HQVrLGEb9RLmOgyKPnqCDIRFH72+nYSpcN+k7Yxc8GiL+qUtKs/GZwBYW2oQMVJR/7XeFVfMYgKBbh/R4L9hYztJX5jCn6iovAwhMB9bd0KqDHhJsiU39R8JoUeGXkW83j3/dZdO1QvTY+AQHmZRW7mZ5MInWeT6BwAJqYICfibSfD/0FYXG7fonPAlzAl6lDiMyBpmZnZOMn0vF8JgHPu1AUxgPrcbNbLhwl19qfz2GnIHoDfg2h8IPXhASh56oIGFSbREIeTYjx0JkJgkZsbGKMYKnEjbSApMUNfhUu16/khm+/tptDqmMDnYmU2E4SQ+Jici9FD1bGO2pDUS2Z6NQz5HyzQyhHPnSH/eQnowRc+YnXa15npey/EEsKE/NGEtS/xk1DXsqEk30wMZYEfwEga5YDCCwIEgzYpHIgF2MmCGYnb/AgtjPRQEYvAWz42S2yD1FNnmsxGxTvOfg60+PuzJW5l2l6zrzvPxw==";
 		//String sshKey = "10.4.3.95 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAnbaHlbTmBEqzoAGSMQQfBFm7NKYmhyPBPhLGoeHT0t88et9uPbV8lBMMV6+NbzmgwXp+eINNofEG8fYhowJY6EqP3Dy9oBgwhFzxoEMVpFOujuw9rjRHpW4zrqxo0q+cAN5DHNiqXPxLmqF5sEKBMge/9djGHlxfbNuXEi5uoemExpQ+8yd2H1xuMrVHV245EC/BUZYC2zWmccWV2Phg41in4GaKddyTCFDFAaVziNZAMn1RuKMG+Xx8N9I2Cji70ZiWOvZiu8iYH/a4ZVxPxo9OyvsQZUiIuAsVfCPomisCmgTmbZSVivgwC1Q4ZaaBavxt/vv0giZ7yipMzHSOzw==";
 
-		String sshKey = "172.20.21.227 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBOFACNqqkQKK8o4LuaOCiogpO0xwTdFpSqB8394dBJWu0LtrYA9LxjMCwBu7oGB4pcRfLvFBV0g+dVDMuq+2PDkvmyXLntnjZkTLQlH2B2dmxenRfB0QZVEqh86fmrUxbhbI0hDYJLx9YFs49vdYorg7zYOMu2fhnpzFoc8Icw907rJP1PVMQWpK0SeMWYLXhCajWm0oq6GmB0Gf0qwb+1SzaHmFyuhTd5jdK6Yk25rTR67R5WT5ElNW2ZoyI2kK/ILBKyvS1DyuhiHm/UJ4AHkA6DKLjfSPgE2JgOHZQ01+EeYYghyjbzeyv+fOehhajE6kqAYjGakrMB4FmGeY/wXgSmaUpNms3phBDNsgEwOi+UinfYxrauhNDWDMZWw/Fl0Lw17rUyczf8I5wwxvAffMUvaFwMVnR5Z3bkb7+iTPxpvRWmQfrlyhU9J+8tM9vUBWLxeg0dIRuWC1TJnh4vG4EHasDa17UFpsdC+vRluYfFeciHHMFKKHXQwJD860=";
+		//String sshKey = "172.20.21.227 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBOFACNqqkQKK8o4LuaOCiogpO0xwTdFpSqB8394dBJWu0LtrYA9LxjMCwBu7oGB4pcRfLvFBV0g+dVDMuq+2PDkvmyXLntnjZkTLQlH2B2dmxenRfB0QZVEqh86fmrUxbhbI0hDYJLx9YFs49vdYorg7zYOMu2fhnpzFoc8Icw907rJP1PVMQWpK0SeMWYLXhCajWm0oq6GmB0Gf0qwb+1SzaHmFyuhTd5jdK6Yk25rTR67R5WT5ElNW2ZoyI2kK/ILBKyvS1DyuhiHm/UJ4AHkA6DKLjfSPgE2JgOHZQ01+EeYYghyjbzeyv+fOehhajE6kqAYjGakrMB4FmGeY/wXgSmaUpNms3phBDNsgEwOi+UinfYxrauhNDWDMZWw/Fl0Lw17rUyczf8I5wwxvAffMUvaFwMVnR5Z3bkb7+iTPxpvRWmQfrlyhU9J+8tM9vUBWLxeg0dIRuWC1TJnh4vG4EHasDa17UFpsdC+vRluYfFeciHHMFKKHXQwJD860=";
 		
-		String sftppath = "/home/tecnotree/BulkStorage/";
+		String sftppath = "/bulk-store/SuccessFileTransfer/";
 		String file = "[.gz]";
 		
 		
@@ -540,7 +540,7 @@ public class SFTP {
 //		sftpfileexections(sftpHost, sftpPort, sftpUserName, sftpPassword, sshKey, sftppath, file);
 //		System.out.println("---" + count);
 
-		 sftpremove(sftpHost, sftpPort, sftpUserName, sftpPassword, sshKey, sftppath);
+		// sftpremove(sftpHost, sftpPort, sftpUserName, sftpPassword, sshKey, sftppath);
 		//SFTP.sftpremove(Routers.sftpHost_172_20_21_57, Routers.sftpPort_31703, Routers.sftpUserName, Routers.sftpPassword, Routers.sshKey__172_20_21_57, Routers.sftpBasePath);
 
 //		System.out.println(headers(sftpUserName, sftpPassword, sftpHost, sftpPort, sshKey, sftppath));
@@ -555,9 +555,9 @@ public class SFTP {
 //
 		//System.out.println(SFTPFileExtensionValidator(sftpUserName, sftpPassword, sftpHost, sftpPort, sshKey, sftppath, file));
 		
-//	System.out.println(SftpFileCount(sftpUserName, sftpPassword, sftpHost, sftpPort, sshKey, sftppath));
+System.out.println(SftpFileCount(sftpUserName, sftpPassword, sftpHost, sftpPort, sshKey, sftppath));
 //
-//		System.out.println(SftpAllFileCount(sftpUserName, sftpPassword, sftpHost, sftpPort, sshKey, sftppath));
+		//System.out.println(SftpAllFileCount(sftpUserName, sftpPassword, sftpHost, sftpPort, sshKey, sftppath));
 
 
 	}

@@ -5,6 +5,7 @@ com\tecnotree\automatiom\utilities\testmongo.class
 com\tecnotree\automatiom\ReUsedMethods\MasterConfiguration.class
 com\tecnotree\automatiom\SS0_aaccess_token\ResponseFromSSO.class
 com\tecnotree\automatiom\Pojo\FileUpload.class
+test\TEST001Test.class
 com\tecnotree\automatiom\utilities\ExcelDataProviderTest.class
 com\tecnotree\automatiom\File\Upload\Service\Test_002_port_22_172.class
 com\tecnotree\automatiom\Listerns\TC2.class
@@ -25,6 +26,7 @@ com\tecnotree\automatiom\Methods\Method.class
 com\tecnotree\automatiom\utilities\DocumentToBase64.class
 com\tecnotree\automatiom\File\Upload\Service\Test_006_port_22_1_wrongPath.class
 test\ExtendReports.class
+test\RetryListenerClass.class
 test\CustomTestListener.class
 com\tecnotree\automatiom\File\Upload\Service\Test_0001_File_Upload_Service.class
 test\Sftpchechjsch.class
@@ -36,6 +38,7 @@ com\tecnotree\automatiom\Listerns\Listeners.class
 com\tecnotree\automatiom\utilities\MongoDb.class
 com\tecnotree\automatiom\File\Upload\Service\Test_011_SubFolderDoesntExists.class
 com\tecnotree\automatiom\testcases\dummy.class
+test\RetryAnalyzer.class
 com\tecnotree\automatiom\File\Upload\Service\Test_004_BDC_PElab_WrongPath.class
 com\tecnotree\automatiom\ReUsedMethods\DifferentMethods.class
 com\tecnotree\automatiom\Listerns\Extent.class

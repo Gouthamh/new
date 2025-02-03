@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\krgouth\OneDrive - Tecnotree\Desktop\File-Upload-service\com.tecnotree.automatiom\testng.xml</span>
+                    <span>C:\Users\krgouth\OneDrive - Tecnotree\Desktop\File-Upload-service\com.tecnotree.automatiom\training.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TEST001Test" class="method navigator-link" hash-for-method="test13Test">test13Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TEST001Test" class="method navigator-link" hash-for-method="test13Test">test13Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TEST001Test" class="method navigator-link" hash-for-method="test13Test">test13Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TEST001Test" class="method navigator-link" hash-for-method="test13Test">test13Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +141,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172" class="method navigator-link" hash-for-method="JPEG">JPEG</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.TEST001Test" class="method navigator-link" hash-for-method="test11Test">test11Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TEST001Test" class="method navigator-link" hash-for-method="test12Test">test12Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -118,17 +161,88 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172</span>
+              <img src="failed.png"/>
+              <span class="class-name">test.TEST001Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JPEG">
-                  </a> <!-- JPEG -->
-                  <span class="method-name">JPEG</span>
+                  <a name="test13Test">
+                  </a> <!-- test13Test -->
+                  <span class="method-name">test13Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.TEST001Test.test13Test(TEST001Test.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.TEST001Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test13Test">
+                  </a> <!-- test13Test -->
+                  <span class="method-name">test13Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.TEST001Test.test13Test(TEST001Test.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test13Test">
+                  </a> <!-- test13Test -->
+                  <span class="method-name">test13Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.TEST001Test.test13Test(TEST001Test.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test13Test">
+                  </a> <!-- test13Test -->
+                  <span class="method-name">test13Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.TEST001Test.test13Test(TEST001Test.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TEST001Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test11Test">
+                  </a> <!-- test11Test -->
+                  <span class="method-name">test11Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test12Test">
+                  </a> <!-- test12Test -->
+                  <span class="method-name">test12Test</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,22 +250,27 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\krgouth\OneDrive - Tecnotree\Desktop\File-Upload-service\com.tecnotree.automatiom\testng.xml</span>
+            <span class="header-content">C:\Users\krgouth\OneDrive - Tecnotree\Desktop\File-Upload-service\com.tecnotree.automatiom\training.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Test1_Test2_Test3&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.RetryListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172&quot;&gt;
+      &lt;class name=&quot;test.TEST001Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;JPEG&quot;/&gt;
+          &lt;include name=&quot;test11Test&quot;/&gt;
+          &lt;include name=&quot;test12Test&quot;/&gt;
+          &lt;include name=&quot;test13Test&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172 --&gt;
+      &lt;/class&gt; &lt;!-- test.TEST001Test --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1_Test2_Test3 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,7 +282,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1_Test2_Test3 (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,14 +292,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">JPEG</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">JPEG</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -197,16 +308,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'JPEG')
-data.setCell(0, 2, 'com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172')
-data.setCell(0, 3, 4750);
+data.setCell(0, 1, 'test11Test')
+data.setCell(0, 2, 'test.TEST001Test')
+data.setCell(0, 3, 3052);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test13Test')
+data.setCell(1, 2, 'test.TEST001Test')
+data.setCell(1, 3, 3023);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test12Test')
+data.setCell(2, 2, 'test.TEST001Test')
+data.setCell(2, 3, 3010);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test13Test')
+data.setCell(3, 2, 'test.TEST001Test')
+data.setCell(3, 3, 3010);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test13Test')
+data.setCell(4, 2, 'test.TEST001Test')
+data.setCell(4, 3, 3009);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test13Test')
+data.setCell(5, 2, 'test.TEST001Test')
+data.setCell(5, 3, 3005);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -217,52 +348,13 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">JPEG</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">ALL</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">14 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">YMAL</span>
-                <br/>
-                <span class="ignored-method-name">JSON</span>
-                <br/>
-                <span class="ignored-method-name">TXT</span>
-                <br/>
-                <span class="ignored-method-name">BPMN</span>
-                <br/>
-                <span class="ignored-method-name">XLX</span>
-                <br/>
-                <span class="ignored-method-name">CSV</span>
-                <br/>
-                <span class="ignored-method-name">SQl</span>
-                <br/>
-                <span class="ignored-method-name">DMN</span>
-                <br/>
-                <span class="ignored-method-name">PNG</span>
-                <br/>
-                <span class="ignored-method-name">JPG</span>
-                <br/>
-                <span class="ignored-method-name">SevenZFile</span>
-                <br/>
-                <span class="ignored-method-name">HTML</span>
-                <br/>
-                <span class="ignored-method-name">ZIP</span>
-                <br/>
-                <span class="ignored-method-name">tar</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -271,18 +363,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tecnotree.automatiom.File.Upload.Service.Test_002_port_22_172</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">masterDataUpdate</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">sftpremove</span>
-                <span class="method-start">12896 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">test.TEST001Test</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">JPEG</span>
-                <span class="method-start">14043 ms</span>
+                <span class="method-name">test11Test</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test12Test</span>
+                <span class="method-start">3059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test13Test</span>
+                <span class="method-start">6080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test13Test</span>
+                <span class="method-start">9105 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test13Test</span>
+                <span class="method-start">12118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test13Test</span>
+                <span class="method-start">15129 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

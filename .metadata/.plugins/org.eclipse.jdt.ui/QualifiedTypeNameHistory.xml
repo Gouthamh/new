@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
-    <fullyQualifiedTypeName name="com.tecnotree.automatiom.testcases.bulksSebrvices.usermethod.setmenthods"/>
-    <fullyQualifiedTypeName name="com.tecnotree.automatiom.utilities.SFTP"/>
-    <fullyQualifiedTypeName name="com.tecnotree.automatiom.testcases.bulksSebrvices.usermethod.Processedmethods"/>
-    <fullyQualifiedTypeName name="com.tecnotree.automatiom.testcases.bulksSebrvices.usermethod.ErrorfolderMethods"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Sheet"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.model.geojson.Position"/>
-    <fullyQualifiedTypeName name="com.tecnotree.automatiom.testcases.bulksSebrvices.usermethod.Processedmethods2"/>
-    <fullyQualifiedTypeName name="com.tecnotree.automatiom.testcases.bulksSebrvices.usermethod.Usermethods"/>
     <fullyQualifiedTypeName name="java.sql.ResultSetMetaData"/>
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
     <fullyQualifiedTypeName name="com.tecnotree.automatiom.Json"/>
@@ -47,7 +37,6 @@
     <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.configuration.ViewName"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
@@ -56,8 +45,19 @@
     <fullyQualifiedTypeName name="org.testng.annotations.Listeners"/>
     <fullyQualifiedTypeName name="com.tecnotree.automatiom.Listerns.Listeners"/>
     <fullyQualifiedTypeName name="com.tecnotree.automatiom.File.Upload.Service.Test_001_BDC_PElab_3"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.lang.AssertionError"/>
-    <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.core.Logger"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.testng.IRetryAnalyzer"/>
+    <fullyQualifiedTypeName name="org.apache.xmlbeans.impl.xb.xsdschema.Public"/>
+    <fullyQualifiedTypeName name="org.testng.ITestResult"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="org.testng.ITestListener"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="org.testng.IAnnotationTransformer"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.ITestAnnotation"/>
+    <fullyQualifiedTypeName name="test.RetryAnalyzer"/>
 </qualifiedTypeNameHistroy>
